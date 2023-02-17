@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Voice Recorder</title>
+</head>
+<style>
+    /* Add some basic styles for the timer display */
+    span {
+      font-size: 24px;
+      font-weight: bold;
+      color:whitesmoke;
+    }
+    body {
+         background-color: grey;
+    }
+  </style>
+<body>
+    <p>15 Second Timer: <span id="timer-15">15</span></p>
+    <p>45 Second Timer: <span id="timer-45">45</span></p>
+    <button onclick="startTimer15()" id="start-15">Start 15s Timer</button>
+    <button onclick="resetTimer()" id="reset">Reset</button>
+    <button onclick="stopTimer()" id="stop">Stop</button>
+    <div class="container">
+        <div class="display">
+
+        </div>
+
+        <div class="controllers">
+
+        </div>
+    </div>
+</body>
+<script src="vrecorder.js"></script>
+</html>
